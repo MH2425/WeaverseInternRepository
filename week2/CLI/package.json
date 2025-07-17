@@ -1,8 +1,18 @@
 {
   "dependencies": {
-    "commander": "^14.0.0"
+    "commander": "^14.0.0",
+    "inquirer": "^12.7.0"
   },
   "devDependencies": {
+    "@types/inquirer": "^9.0.8",
     "@types/node": "^24.0.13"
+  },
+  "name": "task-manager",
+  "bin": {
+    "task": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "preinstall": "npm run build"
   }
 }
