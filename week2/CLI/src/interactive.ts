@@ -83,7 +83,7 @@ async function handleUpdateTask() {
     type: 'input',
     name: 'id',
     message: 'Enter the task ID to toggle completion status:',
-    validate: (input) => !isNaN(parseInt(input)) ? true : 'Please enter a valid number'
+    validate: (input) => !isNaN(parseInt(input)) ? true : 'Enter a valid number'
   });
   
   await updateTask(parseInt(id, 10));
@@ -94,7 +94,7 @@ async function handleRemoveTask() {
     type: 'input',
     name: 'id',
     message: 'Enter the task ID to remove:',
-    validate: (input) => !isNaN(parseInt(input)) ? true : 'Please enter a valid number'
+    validate: (input) => !isNaN(parseInt(input)) ? true : 'Enter a valid number'
   });
   
   await removeTask(parseInt(id, 10));
