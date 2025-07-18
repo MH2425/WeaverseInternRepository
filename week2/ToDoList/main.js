@@ -80,6 +80,25 @@ function loadItems() {
   }
 }
 
+function filterTasks(filterType) {
+  const items = todolist.querySelectorAll('li');
+  items.forEach(item => {
+    const checkbox = item.querySelector('input[type="checkbox"]');
+
+    switch (filterType) {
+      case 'active':
+        item.style.display = checkbox.checked ? 'none' : '';
+        break;
+      case 'completed':
+        item.style.display = checkbox.checked ? '' : 'none';
+        break;
+      default:
+        item.style.display = '';
+        break;
+    }
+  });
+}
+
 // Add new item button handler
 button[0].addEventListener('click', function() {
   let inputField = document.getElementsByTagName('input')[0];
@@ -102,7 +121,21 @@ button[0].addEventListener('click', function() {
   inputField.focus();
 });
 
+const filterButtons = document.querySelectorAll('.filter-button');
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    filterButtons.forEach(btn => {
+      btn.classList.remove('active');
+    });
+    button.classList.add('active');
+
+    const filterType = button.getAttribute('data-filter');
+    filterTasks(filterType);
+  });
+});
+
 // Load items when page loads
 document.addEventListener('DOMContentLoaded', function() {
   loadItems();
+  document.querySelector('[data-filter="all"]').classList.add('active');
 });
