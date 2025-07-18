@@ -1,6 +1,6 @@
 let todolist = document.getElementById('todolist');
 let quantityField = document.getElementsByClassName('counter');
-let button = document.getElementsByTagName('button');
+let addButton = document.querySelector('.container > button');
 let quantity = 0;
 
 // Save items to local storage
@@ -99,9 +99,9 @@ function filterTasks(filterType) {
   });
 }
 
-// Add new item button handler
-button[0].addEventListener('click', function() {
-  let inputField = document.getElementsByTagName('input')[0];
+
+addButton.addEventListener('click', function() {
+  let inputField = document.getElementById('inputField');
   let inputText = inputField.value.trim();
   
   if (inputText === '') {
