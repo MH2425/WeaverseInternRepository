@@ -5,13 +5,367 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
-    <title>Vite + TS</title>
+    <title>FreshCart Clone</title>
   </head>
   <body>
-    <div id="app"></div>
-    <h1 class="">
-      Hello
-    </h1>
-    <script type="module" src="/src/main.ts"></script>
+    <!-- Navigation Bar -->
+    <header class="flex items-center justify-between px-4 md:px-8 lg:px-16 py-4">
+      <!-- Left -->
+      <div class="flex-shrink-0">
+        <a href="#!">
+          <img src="https://freshcart-template.codescandy.com/assets/images/logo.svg" alt="logo" class="h-8 md:h-10">
+        </a>
+      </div>
+
+      <!-- Right -->
+      <div>
+        <a href="https://themes.getbootstrap.com/product/freshcart-ecommerce-html-template/">
+          <button type="button" class="bg-black text-amber-50 font-medium rounded-md px-3 py-2 md:px-6 md:py-3 hover:bg-gray-500 cursor-pointer transition-colors duration-200 text-sm md:text-base">
+            Buy Now
+          </button>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="bg-gray-100 rounded-lg md:rounded-4xl mx-4 md:mx-8 lg:mx-[5%] relative overflow-hidden">
+      <!-- Background Images - Hidden on mobile -->
+      <div class="hidden lg:block">
+        <div class="absolute top-[20%] left-0 z-10">
+          <img src="https://freshcart-template.codescandy.com/assets/images/hero-screen-1.png" alt="img1" class="w-32 xl:w-auto">
+        </div>
+
+        <div class="absolute right-0 top-[15%] z-10">
+          <img src="https://freshcart-template.codescandy.com/assets/images/hero-screen-2.png" alt="img2" class="w-32 xl:w-auto">
+        </div>
+
+        <div class="absolute right-0 top-[65%] z-10">
+          <img src="https://freshcart-template.codescandy.com/assets/images/hero-screen-3.png" alt="img3" class="w-32 xl:w-auto">
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="relative z-20 text-center flex flex-col items-center px-4 py-12 md:py-16 lg:py-[15%]">
+        <div class="max-w-full md:max-w-3xl lg:max-w-2xl">
+          <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
+            Multi-Purpose E-commerce HTML Template
+          </h1>
+
+          <p class="text-sm md:text-base mb-6 md:mb-8 px-2">
+            Build your online store with a premium Multi-Purpose E-commerce HTML template. 
+            Offering a sleek design, customizable features, and responsive layouts, 
+            this front-end template is perfect for any e-commerce business.
+          </p>
+        </div>
+
+        <!-- Avatar Section -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6 md:mb-8">
+          <!-- Avatar group -->
+          <div class="flex -space-x-2 md:-space-x-4">
+            <img class="w-8 h-8 md:w-12 md:h-12 rounded-full border-2 border-white"
+            src="https://freshcart-template.codescandy.com/assets/images/avatar/avatar-11.jpg" alt="avt1">
+            <img class="w-8 h-8 md:w-12 md:h-12 rounded-full border-2 border-white"
+            src="https://freshcart-template.codescandy.com/assets/images/avatar/avatar-16.jpg" alt="avt2">
+            <img class="w-8 h-8 md:w-12 md:h-12 rounded-full border-2 border-white"
+            src="https://freshcart-template.codescandy.com/assets/images/avatar/avatar-18.jpg" alt="avt3">
+          </div>
+
+          <div>
+            <p class="text-sm md:text-base">
+              Over <span class="font-bold">550+</span> Happy Developers
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <a href="#store-demo">
+          <button class="border border-gray-300 px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-black hover:text-white cursor-pointer transition-colors duration-200 text-sm md:text-base">
+            View Store Demo
+          </button>
+        </a>
+      </div>
+    </section>
+
+
+
+    <!-- Grocery & Furniture (Grid) -->
+<section id="store-demo" class="mt-8 md:mt-12 lg:mt-[3%] mx-4 md:mx-8 lg:mx-[5%]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+    <!-- Grocery Store -->
+    <div class="rounded-2xl md:rounded-4xl bg-green-200 overflow-hidden">
+      <div class="text-center p-6 md:p-8">
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
+          Grocery Store
+        </h2>
+
+        <p class="text-sm md:text-base mb-6 max-w-lg mx-auto">
+          Your one-stop shop for fresh produce, organic goods, dairy, 
+          baked items, and everyday essentials.
+        </p>
+
+        <a href="https://freshcart.codescandy.com/index.html" class="group inline-block">
+          <button class="font-bold cursor-pointer text-sm md:text-base">
+            View Demo
+          </button>
+          <div class="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500 mx-auto"></div>
+        </a>
+      </div>
+      
+      <div class="overflow-hidden">
+        <img class="w-full cursor-pointer transform hover:scale-110 transition-transform duration-400"
+        src="https://freshcart-template.codescandy.com/assets/images/fc-grocery-img.png" alt="Grocery Store">
+      </div>
+    </div>
+
+    <!-- Furniture Store -->
+    <div class="rounded-2xl md:rounded-4xl bg-gray-200 overflow-hidden">
+      <div class="text-center p-6 md:p-8">
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
+          Furniture Store
+        </h2>
+
+        <p class="text-sm md:text-base mb-6 max-w-lg mx-auto">
+          Minimalist furniture store design, perfect for your online furniture shop.
+        </p>
+
+        <a href="https://freshcart.codescandy.com/index.html" class="group inline-block">
+          <button class="font-bold cursor-pointer text-sm md:text-base">
+            View Demo
+          </button>
+          <div class="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500 mx-auto"></div>
+        </a>
+      </div>
+      
+      <div class="overflow-hidden">
+        <img class="w-full cursor-pointer transform hover:scale-110 transition-transform duration-400"
+        src="https://freshcart-template.codescandy.com/assets/images/fc-furniture-img.png" alt="Furniture Store">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- FreshCart Features -->
+    <section class="mt-12 md:mt-16 lg:mt-[7.5%] mx-4 md:mx-8 lg:mx-[5%]">
+      <h1 class="font-bold text-2xl md:text-3xl text-center mb-8 md:mb-12">
+        FreshCart Features
+      </h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        
+        <div class="border border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 text-center hover:shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 transition-all duration-500">
+          <img class="h-8 w-8 md:h-10 md:w-10 mx-auto mt-2 md:mt-4 mb-4"
+          src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="TailwindCSS logo">
+
+          <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+            Built with Latest TailwindCSS
+          </h3>
+
+          <p class="text-sm md:text-base mb-3 px-1">
+            Every code snippet you receive is crafted using 
+            <span class="text-blue-500 hover:text-blue-700">
+              <a href="https://tailwindcss.com/">
+                TailwindCSS
+              </a>
+            </span>, 
+            designed for seamless integration with the user interface. 
+            This ensures a modern and responsive design.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 text-center hover:shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 transition-all duration-500">
+          <img class="h-8 w-8 md:h-10 md:w-10 mx-auto mt-2 md:mt-4 mb-4"
+          src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="TailwindCSS logo">
+
+          <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+            Built with Latest TailwindCSS
+          </h3>
+
+          <p class="text-sm md:text-base mb-3 px-1">
+            Every code snippet you receive is crafted using 
+            <span class="text-blue-500 hover:text-blue-700">
+              <a href="https://tailwindcss.com/">
+                TailwindCSS
+              </a>
+            </span>, 
+            designed for seamless integration with the user interface. 
+            This ensures a modern and responsive design.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 text-center hover:shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 transition-all duration-500">
+          <img class="h-8 w-8 md:h-10 md:w-10 mx-auto mt-2 md:mt-4 mb-4"
+          src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="TailwindCSS logo">
+
+          <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+            Built with Latest TailwindCSS
+          </h3>
+
+          <p class="text-sm md:text-base mb-3 px-1">
+            Every code snippet you receive is crafted using 
+            <span class="text-blue-500 hover:text-blue-700">
+              <a href="https://tailwindcss.com/">
+                TailwindCSS
+              </a>
+            </span>, 
+            designed for seamless integration with the user interface. 
+            This ensures a modern and responsive design.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 text-center hover:shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 transition-all duration-500">
+          <img class="h-8 w-8 md:h-10 md:w-10 mx-auto mt-2 md:mt-4 mb-4"
+          src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="TailwindCSS logo">
+
+          <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+            Built with Latest TailwindCSS
+          </h3>
+
+          <p class="text-sm md:text-base mb-3 px-1">
+            Every code snippet you receive is crafted using 
+            <span class="text-blue-500 hover:text-blue-700">
+              <a href="https://tailwindcss.com/">
+                TailwindCSS
+              </a>
+            </span>, 
+            designed for seamless integration with the user interface. 
+            This ensures a modern and responsive design.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 text-center hover:shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 transition-all duration-500">
+          <img class="h-8 w-8 md:h-10 md:w-10 mx-auto mt-2 md:mt-4 mb-4"
+          src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="TailwindCSS logo">
+
+          <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+            Built with Latest TailwindCSS
+          </h3>
+
+          <p class="text-sm md:text-base mb-3 px-1">
+            Every code snippet you receive is crafted using 
+            <span class="text-blue-500 hover:text-blue-700">
+              <a href="https://tailwindcss.com/">
+                TailwindCSS
+              </a>
+            </span>, 
+            designed for seamless integration with the user interface. 
+            This ensures a modern and responsive design.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 text-center hover:shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 transition-all duration-500">
+          <img class="h-8 w-8 md:h-10 md:w-10 mx-auto mt-2 md:mt-4 mb-4"
+          src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="TailwindCSS logo">
+
+          <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+            Built with Latest TailwindCSS
+          </h3>
+
+          <p class="text-sm md:text-base mb-3 px-1">
+            Every code snippet you receive is crafted using 
+            <span class="text-blue-500 hover:text-blue-700">
+              <a href="https://tailwindcss.com/">
+                TailwindCSS
+              </a>
+            </span>, 
+            designed for seamless integration with the user interface. 
+            This ensures a modern and responsive design.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 text-center hover:shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 transition-all duration-500">
+          <img class="h-8 w-8 md:h-10 md:w-10 mx-auto mt-2 md:mt-4 mb-4"
+          src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="TailwindCSS logo">
+
+          <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+            Built with Latest TailwindCSS
+          </h3>
+
+          <p class="text-sm md:text-base mb-3 px-1">
+            Every code snippet you receive is crafted using 
+            <span class="text-blue-500 hover:text-blue-700">
+              <a href="https://tailwindcss.com/">
+                TailwindCSS
+              </a>
+            </span>, 
+            designed for seamless integration with the user interface. 
+            This ensures a modern and responsive design.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 text-center hover:shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 transition-all duration-500">
+          <img class="h-8 w-8 md:h-10 md:w-10 mx-auto mt-2 md:mt-4 mb-4"
+          src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="TailwindCSS logo">
+
+          <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+            Built with Latest TailwindCSS
+          </h3>
+
+          <p class="text-sm md:text-base mb-3 px-1">
+            Every code snippet you receive is crafted using 
+            <span class="text-blue-500 hover:text-blue-700">
+              <a href="https://tailwindcss.com/">
+                TailwindCSS
+              </a>
+            </span>, 
+            designed for seamless integration with the user interface. 
+            This ensures a modern and responsive design.
+          </p>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 text-center hover:shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 transition-all duration-500">
+          <img class="h-8 w-8 md:h-10 md:w-10 mx-auto mt-2 md:mt-4 mb-4"
+          src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="TailwindCSS logo">
+
+          <h3 class="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+            Built with Latest TailwindCSS
+          </h3>
+
+          <p class="text-sm md:text-base mb-3 px-1">
+            Every code snippet you receive is crafted using 
+            <span class="text-blue-500 hover:text-blue-700">
+              <a href="https://tailwindcss.com/">
+                TailwindCSS
+              </a>
+            </span>, 
+            designed for seamless integration with the user interface. 
+            This ensures a modern and responsive design.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="bg-gray-100 rounded-lg md:rounded-4xl mt-8 md:mt-12 lg:mt-[5%] mx-4 md:mx-8 lg:mx-[5%] mb-8 md:mb-12 lg:mb-[5%]">
+      <div class="text-center flex flex-col items-center px-4 py-8 md:py-12 lg:py-[5%]">
+        <div class="max-w-full md:max-w-2xl lg:max-w-[50%]">
+          <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
+            Build fast. Launch faster. with FreshCart Template
+          </h1>
+
+          <p class="text-sm md:text-base mb-6 md:mb-8">
+            Start working with the impressive design, powerful features, 
+            and easy customization making website building faster, easier and more professional than ever.
+          </p>
+        </div>
+
+        <a href="#store-demo">
+          <button class="border border-gray-300 px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-black hover:text-white cursor-pointer transition-colors duration-200 text-sm md:text-base">
+            Buy Now FreshCart
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center px-4 py-8 md:py-12">
+      <p class="text-xs md:text-sm text-gray-600">
+        © 2025, FreshCart CLONE UI - Multi Purpose Ecommerce HTML Template. 
+        <br class="sm:hidden">
+        Created by <span class="text-blue-800 font-medium">Minh Hoang</span>
+      </p>
+  </footer>
   </body>
 </html>
