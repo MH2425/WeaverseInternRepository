@@ -1,4 +1,5 @@
 import type { Transaction } from "./type";
+import "style.css";
 
 let incomeTransactions : Transaction[] = [];
 let expenseTransactions : Transaction[] = [];
