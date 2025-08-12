@@ -1,15 +1,5 @@
 import {PrismaClient} from '@prisma/client';
 import express, {json} from 'express';
-// import { 
-//   generateAccessToken, 
-//   generateRefreshToken, 
-//   hashPassword, 
-//   comparePassword, 
-//   verifyToken, 
-//   verifyRefreshToken,
-//   AuthRequest 
-// } from './auth';
-// import cookieParser from 'cookie-parser';
 
 require('dotenv').config();
 
@@ -18,72 +8,6 @@ const prisma = new PrismaClient();
 const port = 3000;
 
 app.use(json());
-// app.use(cookieParser());
-
-/**
- * AUTH
- */
-
-// REGISTER
-// app.post('/api/auth/register', async (req, res) => {
-//   try {
-//     const {email, name, password} = req.body;
-
-//     if (!email || !name || !password) {
-//       return res.status(400).json({
-//         message: 'Email, name and password required'
-//       });
-//     }
-
-//     const user = await prisma.user.findUnique({
-//       where: {email}
-//     });
-
-//     if (user) {
-//       return res.status(400).json({
-//         message: 'User already exist'
-//       });
-//     }
-
-//     const hash = await hashPassword(password);
-//     const newUser = await prisma.user.create({
-//       data : {
-//         email, 
-//         name,
-//         password: hash
-//       },
-//       select : {
-//         id: true,
-//         email: true,
-//         name: true,
-//         createdAt: true
-//       }
-//     });
-
-//     const accessToken = generateAccessToken({
-//       id: newUser.id, 
-//       email: newUser.email
-//     });
-
-//     const refreshToken = generateRefreshToken({
-//       id: newUser.id
-//     });
-
-//     await prisma.user.update({
-//       where: {id: newUser.id},
-//       data: refreshToken
-//     });
-
-//     res.status(201).json({
-//       message: 'User registered successfully',
-//       user,
-//       accessToken
-//     });
-
-//   } catch (err : any) {
-//     res.status(500).json({message: err.message});
-//   }
-// });
 
 
 /**
