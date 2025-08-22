@@ -4,4 +4,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  base: '/WeaverseInternRepository/week3/BudgetApp/'
 })
